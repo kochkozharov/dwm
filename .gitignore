@@ -1,5 +1,7 @@
 dwm
 *.o
-*.c.org
+*.c.orig
+*.h.orig
 *.c.rej
+*.h.rej
 config.h
