@@ -69,6 +69,7 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 static const char *termcmd[]  = { "alacritty", NULL };
 static const char *brightnessup[] = { "xbacklight", "-inc", "5", NULL };
 static const char *brightnessdown[] = { "xbacklight", "-dec", "5", NULL };
+static const char *flameshot[] = {"flameshot", "gui", NULL};
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -107,6 +108,7 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 	{ 0, XF86XK_MonBrightnessUp, spawn, {.v = brightnessup} },
 	{ 0, XF86XK_MonBrightnessDown, spawn, {.v = brightnessdown} },
+	{ 0, XK_Print, spawn, {.v = flameshot} },
 };
 
 /* button definitions */
